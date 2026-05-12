@@ -18,6 +18,7 @@
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&family=Frank+Ruhl+Libre:wght@400;500;700;900&family=Gveret+Levin+AlefAlefAlef&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&family=Frank+Ruhl+Libre:wght@400;500;700;900&family=Gveret+Levin+AlefAlefAlef&display=swap" rel="stylesheet">
 
 <style>
@@ -399,9 +400,20 @@ nav.main-nav a:hover { color: var(--wine); }
   overflow: hidden;
   box-shadow: var(--shadow-lg);
   aspect-ratio: 4 / 5;
-  background:
-    linear-gradient(135deg, rgba(139, 45, 31, 0.15), transparent),
-    url('images/portrait.jpg') center/cover no-repeat var(--parchment);
+  background: var(--parchment);
+}
+.about-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.about-image-wrap::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(135deg, rgba(139, 45, 31, 0.15), transparent);
+  z-index: 1;
+  pointer-events: none;
 }
 .about-image-wrap::after {
   content: ''; position: absolute; inset: 0;
@@ -863,7 +875,9 @@ footer.site-footer {
         <span class="signature">מירון שטטר, מורה דרך מוסמך</span>
       </div>
 
-      <div class="about-image-wrap reveal" aria-label="תמונה של מירון שטטר"></div>
+      <div class="about-image-wrap reveal">
+        <img src="images/portrait.jpg" alt="מירון שטטר - מורה דרך מוסמך" loading="lazy">
+      </div>
     </div>
 
     <div class="about-method reveal">
