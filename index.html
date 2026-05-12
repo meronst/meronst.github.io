@@ -1,0 +1,1073 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="מירון שטטר - מורה דרך ומרצה. ההרצאה 'הסיפור המטורף של מגילות מדבר יהודה' ועוד הרצאות מרתקות על היסטוריה של ארץ ישראל.">
+<meta name="theme-color" content="#8B2D1F">
+<title>מירון שטטר | לטייל את הסיפור - הרצאות על היסטוריה של ארץ ישראל</title>
+
+<!-- Open Graph -->
+<meta property="og:title" content="מירון שטטר | לטייל את הסיפור">
+<meta property="og:description" content="הרצאות מרתקות על היסטוריה של ארץ ישראל. הסיפור המטורף של מגילות מדבר יהודה ועוד.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://meron.tours">
+<meta property="og:image" content="https://meron.tours/images/hero-stage.jpg">
+<meta property="og:locale" content="he_IL">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&family=Frank+Ruhl+Libre:wght@400;500;700;900&family=Gveret+Levin+AlefAlefAlef&display=swap" rel="stylesheet">
+
+<style>
+/* ---------- Reset & Base ---------- */
+*,*::before,*::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+img { max-width: 100%; height: auto; display: block; }
+button { font: inherit; cursor: pointer; border: none; background: none; }
+a { color: inherit; text-decoration: none; }
+
+:root {
+  --cream: #FAF5EC;
+  --cream-2: #F2E9D4;
+  --parchment: #E8DCC0;
+  --wine: #8B2D1F;
+  --wine-dark: #5C1A10;
+  --gold: #C9A45C;
+  --gold-dark: #A98438;
+  --ink: #2C1810;
+  --ink-soft: #6B5443;
+  --sage: #6B7E5A;
+  --shadow-sm: 0 2px 10px rgba(44, 24, 16, 0.08);
+  --shadow-md: 0 8px 30px rgba(44, 24, 16, 0.12);
+  --shadow-lg: 0 20px 60px rgba(44, 24, 16, 0.20);
+  --radius: 14px;
+  --radius-sm: 8px;
+  --container: 1180px;
+}
+
+body {
+  font-family: 'Assistant', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 18px;
+  line-height: 1.65;
+  color: var(--ink);
+  background: var(--cream);
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Frank Ruhl Libre', Georgia, serif;
+  line-height: 1.2;
+  color: var(--ink);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.container { max-width: var(--container); margin: 0 auto; padding: 0 24px; }
+
+/* ---------- Header / Nav ---------- */
+header.site-header {
+  position: fixed; top: 0; right: 0; left: 0; z-index: 100;
+  background: rgba(250, 245, 236, 0.92);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(139, 45, 31, 0.08);
+  transition: padding 0.25s ease;
+}
+header.site-header .container {
+  display: flex; align-items: center; justify-content: space-between;
+  padding-top: 14px; padding-bottom: 14px;
+}
+.brand {
+  font-family: 'Gveret Levin AlefAlefAlef', 'Frank Ruhl Libre', serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: var(--wine);
+  letter-spacing: 0;
+  line-height: 1.1;
+}
+.brand small {
+  display: block;
+  font-family: 'Gveret Levin AlefAlefAlef', 'Assistant', sans-serif;
+  font-size: 20px; font-weight: 400; color: var(--gold-dark);
+  letter-spacing: 0.02em; margin-top: 2px;
+}
+nav.main-nav ul { list-style: none; display: flex; gap: 28px; }
+nav.main-nav a {
+  font-size: 15px; font-weight: 600; color: var(--ink-soft);
+  transition: color 0.2s;
+}
+nav.main-nav a:hover { color: var(--wine); }
+.nav-cta {
+  background: var(--wine); color: #fff !important;
+  padding: 10px 20px; border-radius: 100px;
+  font-size: 14px; font-weight: 700;
+  transition: background 0.2s, transform 0.2s;
+}
+.nav-cta:hover { background: var(--wine-dark); transform: translateY(-1px); }
+.mobile-toggle { display: none; }
+
+/* ---------- Hero ---------- */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex; align-items: center;
+  padding: 120px 0 60px;
+  background:
+    linear-gradient(135deg, rgba(44, 24, 16, 0.85) 0%, rgba(139, 45, 31, 0.65) 100%),
+    url('images/hero-stage.jpg') center/cover no-repeat;
+  color: #fff;
+  overflow: hidden;
+}
+.hero::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, var(--cream) 0%, transparent 18%);
+  pointer-events: none;
+}
+.hero .container { position: relative; z-index: 2; max-width: 920px; }
+.hero .eyebrow {
+  display: inline-block;
+  font-size: 14px; font-weight: 600;
+  letter-spacing: 0.18em; text-transform: none;
+  color: var(--gold);
+  padding: 8px 18px;
+  border: 1px solid rgba(201, 164, 92, 0.5);
+  border-radius: 100px;
+  margin-bottom: 28px;
+  background: rgba(0, 0, 0, 0.2);
+}
+.hero h1 {
+  font-size: clamp(36px, 6vw, 68px);
+  color: #fff;
+  margin-bottom: 24px;
+  line-height: 1.05;
+  text-shadow: 0 2px 30px rgba(0, 0, 0, 0.3);
+}
+.hero h1 .accent { color: var(--gold); display: block; font-style: italic; font-weight: 500; }
+.hero .lead {
+  font-size: clamp(18px, 2vw, 22px);
+  font-weight: 400; max-width: 720px;
+  margin-bottom: 36px; color: rgba(255, 255, 255, 0.92);
+  line-height: 1.55;
+}
+.hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
+.btn {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 16px 32px; border-radius: 100px;
+  font-size: 17px; font-weight: 700;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+  cursor: pointer; white-space: nowrap;
+}
+.btn-primary {
+  background: var(--gold); color: var(--ink);
+  box-shadow: 0 8px 24px rgba(201, 164, 92, 0.4);
+}
+.btn-primary:hover { background: #d4af66; transform: translateY(-2px); box-shadow: 0 12px 30px rgba(201, 164, 92, 0.55); }
+.btn-whatsapp {
+  background: #25D366; color: #fff;
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.35);
+}
+.btn-whatsapp:hover { background: #1FAB50; transform: translateY(-2px); }
+.btn-ghost {
+  background: transparent; color: #fff; border: 1.5px solid rgba(255, 255, 255, 0.5);
+}
+.btn-ghost:hover { background: rgba(255, 255, 255, 0.1); border-color: #fff; }
+.btn-dark { background: var(--wine); color: #fff; }
+.btn-dark:hover { background: var(--wine-dark); transform: translateY(-2px); }
+.btn svg { width: 22px; height: 22px; }
+
+/* ---------- Motto strip ---------- */
+.motto {
+  background: var(--ink);
+  color: var(--cream);
+  padding: 70px 0;
+  text-align: center;
+  position: relative;
+}
+.motto-quote {
+  position: relative;
+  display: inline-block;
+  max-width: 800px;
+  padding: 0 40px;
+}
+.motto-quote::before, .motto-quote::after {
+  content: '״';
+  position: absolute;
+  font-family: 'Frank Ruhl Libre', serif;
+  color: var(--gold);
+  font-size: clamp(48px, 6vw, 78px);
+  line-height: 1;
+  opacity: 0.55;
+}
+.motto-quote::before { top: -18px; right: -4px; }
+.motto-quote::after  { bottom: -32px; left: -4px; }
+.motto p {
+  font-family: 'Gveret Levin AlefAlefAlef', 'Frank Ruhl Libre', serif;
+  font-size: clamp(26px, 3.5vw, 42px);
+  font-weight: 400; font-style: normal;
+  letter-spacing: 0.01em;
+  line-height: 1.45;
+  margin: 0;
+}
+.motto p strong { color: var(--gold); font-weight: 400; }
+
+/* ---------- Section base ---------- */
+.section { padding: 64px 0; position: relative; }
+.section-head { text-align: center; margin-bottom: 40px; max-width: 760px; margin-inline: auto; }
+.section-head .label {
+  font-size: 13px; font-weight: 700; letter-spacing: 0.25em;
+  color: var(--wine); margin-bottom: 14px; display: inline-block;
+}
+.section-head h2 {
+  font-size: clamp(32px, 4.5vw, 52px);
+  margin-bottom: 18px;
+}
+.section-head p {
+  font-size: 19px; color: var(--ink-soft);
+  line-height: 1.6;
+}
+
+/* ---------- Featured Lecture (Megilot) ---------- */
+.featured-lecture {
+  background: linear-gradient(180deg, var(--cream) 0%, var(--cream-2) 100%);
+  position: relative;
+}
+.featured-lecture::before {
+  content: ''; position: absolute; top: 0; right: 0; left: 0;
+  height: 1px; background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+.lecture-card {
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  border: 1px solid rgba(201, 164, 92, 0.25);
+}
+.lecture-header {
+  padding: 50px 50px 30px;
+  border-bottom: 1px solid var(--parchment);
+  position: relative;
+}
+.lecture-tag {
+  display: inline-block;
+  background: var(--wine); color: var(--gold);
+  font-size: 12px; font-weight: 700; letter-spacing: 0.2em;
+  padding: 7px 16px; border-radius: 100px;
+  margin-bottom: 22px;
+}
+.lecture-card h3 {
+  font-size: clamp(28px, 4vw, 44px);
+  color: var(--wine);
+  margin-bottom: 14px;
+  line-height: 1.15;
+}
+.lecture-tagline {
+  font-size: 19px; color: var(--ink-soft);
+  font-style: italic;
+  max-width: 620px;
+}
+.lecture-body {
+  padding: 40px 50px 50px;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 50px;
+}
+.lecture-body h4 {
+  font-size: 22px; color: var(--wine); margin-bottom: 14px;
+  display: flex; align-items: center; gap: 10px;
+}
+.lecture-body h4::before {
+  content: ''; width: 6px; height: 6px; border-radius: 50%;
+  background: var(--gold);
+}
+.lecture-story p { margin-bottom: 14px; font-size: 17px; line-height: 1.7; }
+.lecture-story p strong { color: var(--wine); font-weight: 700; }
+.questions-list { list-style: none; }
+.questions-list li {
+  padding: 14px 0 14px 0; padding-inline-start: 32px;
+  position: relative; font-size: 17px; line-height: 1.5;
+  border-bottom: 1px dashed var(--parchment);
+}
+.questions-list li:last-child { border: none; }
+.questions-list li::before {
+  content: '?';
+  position: absolute; right: 0; top: 14px;
+  width: 24px; height: 24px;
+  background: var(--gold); color: var(--ink);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 800; font-size: 14px;
+}
+.lecture-meta {
+  background: var(--parchment);
+  padding: 30px 50px;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;
+  border-top: 1px solid rgba(201, 164, 92, 0.3);
+}
+.meta-item { text-align: center; }
+.meta-item .icon {
+  width: 44px; height: 44px;
+  background: var(--wine); border-radius: 50%;
+  display: inline-flex; align-items: center; justify-content: center;
+  margin-bottom: 10px;
+}
+.meta-item .icon svg { width: 20px; height: 20px; stroke: var(--gold); fill: none; stroke-width: 2; }
+.meta-item .label-sm { font-size: 12px; color: var(--ink-soft); font-weight: 700; letter-spacing: 0.1em; }
+.meta-item .value { font-size: 16px; font-weight: 700; color: var(--ink); margin-top: 4px; line-height: 1.3; }
+.lecture-cta {
+  text-align: center; padding: 40px 50px;
+  background: linear-gradient(135deg, var(--wine) 0%, var(--wine-dark) 100%);
+  color: #fff;
+}
+.lecture-cta p { font-size: 20px; margin-bottom: 18px; font-weight: 500; }
+
+/* ---------- Other Lectures ---------- */
+.other-lectures { background: var(--cream-2); }
+.lectures-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px;
+}
+.mini-lecture {
+  background: #fff; border-radius: var(--radius);
+  padding: 36px;
+  border: 1px solid rgba(139, 45, 31, 0.1);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.25s, box-shadow 0.25s;
+  position: relative; overflow: hidden;
+}
+.mini-lecture:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+.mini-lecture::before {
+  content: ''; position: absolute; top: 0; right: 0;
+  width: 6px; height: 100%;
+  background: var(--gold);
+}
+.mini-lecture .icon-circle {
+  width: 58px; height: 58px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--wine), var(--wine-dark));
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 20px;
+  color: var(--gold);
+}
+.mini-lecture .icon-circle svg {
+  width: 30px; height: 30px;
+  stroke: currentColor; fill: none;
+  stroke-width: 1.8;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+.mini-lecture h3 {
+  font-size: 24px; color: var(--wine);
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+.mini-lecture p { font-size: 16px; color: var(--ink-soft); line-height: 1.6; }
+.mini-lecture .tag-small {
+  display: inline-block; font-size: 12px; font-weight: 700;
+  color: var(--sage); margin-top: 16px;
+  letter-spacing: 0.05em;
+}
+
+/* ---------- About ---------- */
+.about {
+  background: var(--cream);
+  position: relative;
+}
+.about-grid {
+  display: grid; grid-template-columns: 1.3fr 1fr;
+  gap: 60px; align-items: center;
+}
+.about-content h2 {
+  font-size: clamp(32px, 4.5vw, 48px);
+  margin-bottom: 24px;
+  color: var(--wine);
+}
+.about-content p {
+  font-size: 18px; line-height: 1.75;
+  margin-bottom: 18px; color: var(--ink);
+}
+.about-content p strong { color: var(--wine); }
+.about-content .signature {
+  font-family: 'Frank Ruhl Libre', serif;
+  font-style: italic; font-size: 22px;
+  color: var(--wine); margin-top: 24px;
+  display: inline-block;
+  padding-top: 16px; border-top: 2px solid var(--gold);
+}
+.about-image-wrap {
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  aspect-ratio: 4 / 5;
+  background:
+    linear-gradient(135deg, rgba(139, 45, 31, 0.15), transparent),
+    url('images/portrait.jpg') center/cover no-repeat var(--parchment);
+}
+.about-image-wrap::after {
+  content: ''; position: absolute; inset: 0;
+  border: 6px solid var(--gold);
+  border-radius: var(--radius);
+  pointer-events: none;
+  transform: translate(12px, 12px);
+  z-index: -1;
+}
+.about-method {
+  margin-top: 60px;
+  background: var(--wine); color: var(--cream);
+  padding: 50px;
+  border-radius: var(--radius);
+  position: relative;
+  display: grid; grid-template-columns: auto 1fr; gap: 30px; align-items: center;
+}
+.about-method .num {
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: 90px; color: var(--gold);
+  font-weight: 900; line-height: 1;
+}
+.about-method h3 { color: var(--gold); margin-bottom: 10px; font-size: 26px; }
+.about-method p { font-size: 18px; line-height: 1.6; }
+
+/* ---------- Testimonials ---------- */
+.testimonials { background: var(--ink); color: var(--cream); }
+.testimonials .section-head h2 { color: var(--cream); }
+.testimonials .section-head .label { color: var(--gold); }
+.testimonials .section-head p { color: rgba(250, 245, 236, 0.75); }
+.testimonial-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px;
+}
+.testimonial {
+  background: rgba(250, 245, 236, 0.05);
+  border: 1px solid rgba(201, 164, 92, 0.2);
+  border-radius: var(--radius);
+  padding: 64px 36px 40px;
+  position: relative;
+  overflow: hidden;
+}
+.testimonial::before {
+  content: '״'; position: absolute;
+  top: 4px; right: 20px;
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: 86px; color: var(--gold); line-height: 1;
+}
+.testimonial::after {
+  content: '״'; position: absolute;
+  bottom: -38px; left: 20px;
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: 86px; color: var(--gold); line-height: 1;
+  opacity: 0.45;
+}
+.testimonial p {
+  font-size: 17px; line-height: 1.7;
+  margin-bottom: 16px;
+  font-family: 'Frank Ruhl Libre', serif;
+  font-style: italic;
+}
+.testimonial .author {
+  font-family: 'Assistant', sans-serif;
+  font-style: normal;
+  font-size: 15px; font-weight: 700;
+  color: var(--gold);
+  letter-spacing: 0.05em;
+}
+.testimonial .author::before { content: '— '; }
+
+/* ---------- Contact ---------- */
+.contact {
+  background: linear-gradient(180deg, var(--cream) 0%, var(--cream-2) 100%);
+  position: relative;
+}
+.contact-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 50px;
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  border: 1px solid rgba(201, 164, 92, 0.25);
+}
+.contact-info {
+  padding: 50px;
+  background: linear-gradient(135deg, var(--wine) 0%, var(--wine-dark) 100%);
+  color: var(--cream);
+  position: relative;
+}
+.contact-info h2 { color: #fff; font-size: 36px; margin-bottom: 14px; }
+.contact-info > p { font-size: 17px; opacity: 0.9; margin-bottom: 36px; }
+.contact-item {
+  display: flex; align-items: center; gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(201, 164, 92, 0.25);
+}
+.contact-item:last-child { border-bottom: none; }
+.contact-item .ci-icon {
+  width: 44px; height: 44px; flex-shrink: 0;
+  background: var(--gold); border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+}
+.contact-item .ci-icon svg { width: 20px; height: 20px; stroke: var(--wine); fill: none; stroke-width: 2; }
+.contact-item .ci-label { font-size: 12px; color: rgba(255,255,255,0.7); letter-spacing: 0.1em; font-weight: 600; }
+.contact-item a, .contact-item span { font-size: 18px; font-weight: 600; color: #fff; display: block; }
+.contact-item a:hover { color: var(--gold); }
+
+.contact-form { padding: 50px; }
+.contact-form h3 { font-size: 26px; color: var(--wine); margin-bottom: 8px; }
+.contact-form .form-sub { color: var(--ink-soft); font-size: 16px; margin-bottom: 26px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 14px; }
+.form-group { margin-bottom: 14px; }
+.form-group label {
+  display: block; font-size: 13px; font-weight: 700;
+  color: var(--ink-soft); margin-bottom: 6px;
+  letter-spacing: 0.03em;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%; padding: 13px 16px;
+  border: 1.5px solid var(--parchment);
+  border-radius: var(--radius-sm);
+  font: inherit;
+  background: var(--cream);
+  color: var(--ink);
+  transition: border-color 0.2s, background 0.2s;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none; border-color: var(--gold); background: #fff;
+}
+.form-group textarea { resize: vertical; min-height: 90px; }
+.form-submit {
+  width: 100%; padding: 16px;
+  background: var(--wine); color: #fff;
+  border-radius: 100px;
+  font-size: 17px; font-weight: 700;
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  transition: background 0.2s, transform 0.2s;
+}
+.form-submit:hover { background: var(--wine-dark); transform: translateY(-1px); }
+.form-submit svg { width: 20px; height: 20px; }
+.form-note {
+  text-align: center; font-size: 13px; color: var(--ink-soft);
+  margin-top: 14px;
+}
+
+/* ---------- Footer ---------- */
+footer.site-footer {
+  background: var(--ink); color: rgba(250, 245, 236, 0.7);
+  padding: 50px 0 30px; text-align: center;
+}
+.footer-brand {
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: 28px; color: var(--gold); margin-bottom: 8px;
+  font-weight: 700;
+}
+.footer-tagline { font-size: 16px; margin-bottom: 24px; font-style: italic; }
+.footer-contact-row {
+  display: flex; justify-content: center; gap: 28px; flex-wrap: wrap;
+  font-size: 15px;
+  margin-bottom: 26px;
+}
+.footer-contact-row a { color: var(--gold); transition: opacity 0.2s; }
+.footer-contact-row a:hover { opacity: 0.7; }
+.footer-copy {
+  font-size: 13px;
+  color: rgba(250, 245, 236, 0.4);
+  padding-top: 20px;
+  border-top: 1px solid rgba(250, 245, 236, 0.1);
+}
+
+/* ---------- Sticky WhatsApp ---------- */
+.whatsapp-float {
+  position: fixed; bottom: 24px; left: 24px;
+  width: 60px; height: 60px;
+  background: #25D366; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+  z-index: 99;
+  transition: transform 0.2s;
+}
+.whatsapp-float:hover { transform: scale(1.08); }
+.whatsapp-float svg { width: 32px; height: 32px; fill: #fff; }
+
+/* ---------- Animations on Scroll ---------- */
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.reveal.in { opacity: 1; transform: translateY(0); }
+
+/* ---------- Mobile ---------- */
+@media (max-width: 880px) {
+  body { font-size: 17px; }
+  nav.main-nav { display: none; }
+  .mobile-toggle {
+    display: flex; align-items: center; justify-content: center;
+    width: 42px; height: 42px;
+    background: var(--wine); border-radius: 50%; color: #fff;
+  }
+  .mobile-toggle svg { width: 22px; height: 22px; }
+  .section { padding: 48px 0; }
+  .hero { min-height: 90vh; padding: 100px 0 50px; }
+  .hero-ctas { flex-direction: column; align-items: stretch; }
+  .hero-ctas .btn { justify-content: center; }
+  .lecture-header, .lecture-body, .lecture-meta, .lecture-cta { padding: 30px 24px; }
+  .lecture-body { grid-template-columns: 1fr; gap: 30px; }
+  .lecture-meta { grid-template-columns: 1fr; gap: 18px; }
+  .lectures-grid { grid-template-columns: 1fr; }
+  .about-grid { grid-template-columns: 1fr; gap: 40px; }
+  .about-image-wrap { max-width: 360px; margin: 0 auto; }
+  .about-method { grid-template-columns: 1fr; padding: 30px; text-align: center; }
+  .about-method .num { font-size: 70px; }
+  .testimonial-grid { grid-template-columns: 1fr; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .contact-info, .contact-form { padding: 30px 24px; }
+  .form-row { grid-template-columns: 1fr; }
+  .motto { padding: 50px 0; }
+  .motto-quote { padding: 0 22px; }
+  .motto-quote::before { top: -10px; right: -2px; }
+  .motto-quote::after  { bottom: -22px; left: -2px; }
+  .whatsapp-float { bottom: 16px; left: 16px; width: 54px; height: 54px; }
+  .whatsapp-float svg { width: 28px; height: 28px; }
+}
+
+/* Mobile nav drawer */
+.mobile-nav {
+  position: fixed; top: 0; right: 0; left: 0; bottom: 0;
+  background: var(--cream);
+  z-index: 200;
+  display: none;
+  flex-direction: column;
+  padding: 80px 24px 30px;
+}
+.mobile-nav.open { display: flex; }
+.mobile-nav a {
+  font-size: 22px; font-weight: 600; color: var(--ink);
+  padding: 18px 0; border-bottom: 1px solid var(--parchment);
+}
+.mobile-nav .close-x {
+  position: absolute; top: 18px; left: 18px;
+  width: 42px; height: 42px;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--wine);
+}
+.mobile-nav .close-x svg { width: 26px; height: 26px; }
+
+/* Print */
+@media print {
+  .site-header, .whatsapp-float, .hero-ctas, .lecture-cta, .form-submit { display: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="container">
+    <a href="#" class="brand">
+      מירון שטטר
+      <small>לטייל את הסיפור</small>
+    </a>
+    <nav class="main-nav" aria-label="ראשי">
+      <ul>
+        <li><a href="#megilot">הרצאת המגילות</a></li>
+        <li><a href="#lectures">עוד הרצאות</a></li>
+        <li><a href="#about">קצת עליי</a></li>
+        <li><a href="#testimonials">מספרים עליי</a></li>
+        <li><a href="#contact" class="nav-cta">לתאם הרצאה</a></li>
+      </ul>
+    </nav>
+    <button class="mobile-toggle" aria-label="תפריט" onclick="document.getElementById('mobileNav').classList.add('open')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobileNav">
+  <button class="close-x" aria-label="סגור" onclick="document.getElementById('mobileNav').classList.remove('open')">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <a href="#megilot" onclick="document.getElementById('mobileNav').classList.remove('open')">הרצאת המגילות</a>
+  <a href="#lectures" onclick="document.getElementById('mobileNav').classList.remove('open')">עוד הרצאות</a>
+  <a href="#about" onclick="document.getElementById('mobileNav').classList.remove('open')">קצת עליי</a>
+  <a href="#testimonials" onclick="document.getElementById('mobileNav').classList.remove('open')">מספרים עליי</a>
+  <a href="#contact" onclick="document.getElementById('mobileNav').classList.remove('open')">לתאם הרצאה</a>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="container">
+    <span class="eyebrow">מורה דרך • מרצה • מספר סיפורים</span>
+    <h1>
+      הסיפור המטורף של
+      <span class="accent">מגילות מדבר יהודה</span>
+    </h1>
+    <p class="lead">
+      צירוף המלים "המגילות הגנוזות ממדבר יהודה" מצית את הדמיון... ובצדק.
+      אתם מזמינים אותי להרצאה — ואני לוקח אתכם למסע מרתק, מלונדון אל מדבר יהודה, ירושלים ועד ניו יורק.
+      מסע בעקבות הסיפור שלא סופר.
+    </p>
+    <div class="hero-ctas">
+      <a href="#contact" class="btn btn-primary">
+        לתאם הרצאה
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a href="https://wa.me/972546488789?text=%D7%94%D7%99%D7%99%20%D7%9E%D7%99%D7%A8%D7%95%D7%9F%2C%20%D7%9E%D7%A2%D7%95%D7%A0%D7%99%D7%99%D7%A0%2F%D7%AA%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A2%D7%95%D7%93%20%D7%A2%D7%9C%20%D7%94%D7%94%D7%A8%D7%A6%D7%90%D7%95%D7%AA" class="btn btn-whatsapp" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        וואטסאפ
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MOTTO ============ -->
+<section class="motto">
+  <div class="container">
+    <div class="motto-quote">
+      <p>במשך שנים אני מטייל בשבילי הארץ וסמטאותיה.<br>החזון שלי הוא <strong>לספר לעם שלי על המקום המיוחד</strong> שבו אנו חיים.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURED LECTURE - MEGILOT ============ -->
+<section class="section featured-lecture" id="megilot">
+  <div class="container">
+    <div class="lecture-card reveal">
+      <div class="lecture-header">
+        <span class="lecture-tag">הרצאת דגל</span>
+        <h3>הסיפור המטורף של מגילות מדבר יהודה</h3>
+        <p class="lecture-tagline">
+          בשנת 1947, רגע לפני הולדתה של מדינת ישראל, רועה בדואי גילה מערה ליד קומראן. הוא ציפה למצוא אוצר — אבל מצא משהו הרבה יותר גדול.
+        </p>
+      </div>
+
+      <div class="lecture-body">
+        <div class="lecture-story">
+          <p>
+            <strong>המגילות הן העותק הקדום ביותר של ספרי התנ"ך</strong> — וגם הסיפור המרתק ביותר בדברי ימיה של ארץ ישראל.
+          </p>
+          <p>
+            ההרצאה מוגשת בצורת סיפור, מלווה בהרבה תמונות. לא תראו שקופיות משעממות עם טקסט בשורות מתישות. זו הרצאה שתישאר אתכם הרבה אחרי שהיא תסתיים.
+          </p>
+          <p>
+            המגילות מחזירות אותנו אל העבר הקדום של עמינו — אל מאבק חברתי, אל משבר אמוני, וגם אל התקווה.
+          </p>
+        </div>
+
+        <div class="lecture-questions">
+          <ul class="questions-list">
+            <li>מי היה <strong>חנוך</strong> שהתנ"ך מקדיש לו מספר מילים — ואילו אנשי המגילות כתבו עליו ספרים?</li>
+            <li>היכן בדיוק התרחשה <strong>עקדת יצחק</strong>?</li>
+            <li>מדוע <strong>מגילת המקדש</strong> מספרת על מקדש אוטופי שמעולם לא הוקם?</li>
+            <li>מי היו <strong>בני האור</strong>?</li>
+            <li>מי המציא את <strong>מלחמת יום כיפור</strong> הרבה לפני המצרים והסורים?</li>
+            <li>האם יש חלקים בהיסטוריה שלנו שמישהו <strong>בחר להעלים</strong>?</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="lecture-meta">
+        <div class="meta-item">
+          <div class="icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          </div>
+          <div class="label-sm">משך</div>
+          <div class="value">כשעה ורבע<br>+ זמן לשאלות</div>
+        </div>
+        <div class="meta-item">
+          <div class="icon">
+            <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div class="label-sm">למי מתאים</div>
+          <div class="value">חברות, בתי ספר,<br>גמלאים, צופים</div>
+        </div>
+        <div class="meta-item">
+          <div class="icon">
+            <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <div class="label-sm">פורמט</div>
+          <div class="value">סיפור חי<br>עם תמונות</div>
+        </div>
+      </div>
+
+      <div class="lecture-cta">
+        <p>רוצים לשמוע את הסיפור?</p>
+        <a href="#contact" class="btn btn-primary">שריינו תאריך</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OTHER LECTURES ============ -->
+<section class="section other-lectures" id="lectures">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="label">הרצאות נוספות</span>
+      <h2>עוד סיפורים שכדאי לשמוע</h2>
+      <p>כל הרצאה היא סיפור, ובו תחנות, דמויות מרתקות ותובנות שימשיכו איתנו גם כשידלקו האורות.</p>
+    </div>
+
+    <div class="lectures-grid">
+
+      <div class="mini-lecture reveal">
+        <div class="icon-circle">
+          <svg viewBox="0 0 24 24"><path d="M3 6c0-1.66 1.34-3 3-3h12c1.66 0 3 1.34 3 3v12c0 1.66-1.34 3-3 3H6c-1.66 0-3-1.34-3-3z"/><path d="M3 6c0 1.66 1.34 3 3 3M21 18c0-1.66-1.34-3-3-3"/><line x1="8" y1="9" x2="16" y2="9"/><line x1="8" y1="13" x2="14" y2="13"/><line x1="8" y1="17" x2="12" y2="17"/></svg>
+        </div>
+        <h3>היום הזה נהיינו עם</h3>
+        <p>הרצאה על ראשית ישראל. כיצד נולד עם ישראל? רמזים מהתנ"ך והארכיאולוגיה מתחברים לסיפור אחד.</p>
+        <span class="tag-small">זהות • היסטוריה • תנך • ארכיאולוגיה</span>
+      </div>
+
+      <div class="mini-lecture reveal">
+        <div class="icon-circle">
+          <svg viewBox="0 0 24 24"><path d="M3 6c0-1.66 1.34-3 3-3h12c1.66 0 3 1.34 3 3v12c0 1.66-1.34 3-3 3H6c-1.66 0-3-1.34-3-3z"/><path d="M3 6c0 1.66 1.34 3 3 3M21 18c0-1.66-1.34-3-3-3"/><line x1="8" y1="9" x2="16" y2="9"/><line x1="8" y1="13" x2="14" y2="13"/><line x1="8" y1="17" x2="12" y2="17"/></svg>
+        </div>
+        <h3>חנוכה — זיכרון הממלכה הנעלמה</h3>
+        <p>מאחורי נס פך השמן וקרבות המקבים מסתתרת ממלכה שלמה. הסיפור שלא סיפרו לנו בגן.</p>
+        <span class="tag-small">זהות • חגים • ממלכת החשמונאים</span>
+      </div>
+
+      <div class="mini-lecture reveal">
+        <div class="icon-circle">
+          <svg viewBox="0 0 24 24"><path d="M3 6c0-1.66 1.34-3 3-3h12c1.66 0 3 1.34 3 3v12c0 1.66-1.34 3-3 3H6c-1.66 0-3-1.34-3-3z"/><path d="M3 6c0 1.66 1.34 3 3 3M21 18c0-1.66-1.34-3-3-3"/><line x1="8" y1="9" x2="16" y2="9"/><line x1="8" y1="13" x2="14" y2="13"/><line x1="8" y1="17" x2="12" y2="17"/></svg>
+        </div>
+        <h3>היום שבו רעדה האדמה</h3>
+        <p>מלחמת יום כיפור ברמת הגולן — חטא היוהרה, קרבות הגבורה והסיפורים האישיים.</p>
+        <span class="tag-small">זהות • היסטוריה • מלחמות</span>
+      </div>
+
+      <div class="mini-lecture reveal">
+        <div class="icon-circle">
+          <svg viewBox="0 0 24 24"><path d="M3 6c0-1.66 1.34-3 3-3h12c1.66 0 3 1.34 3 3v12c0 1.66-1.34 3-3 3H6c-1.66 0-3-1.34-3-3z"/><path d="M3 6c0 1.66 1.34 3 3 3M21 18c0-1.66-1.34-3-3-3"/><line x1="8" y1="9" x2="16" y2="9"/><line x1="8" y1="13" x2="14" y2="13"/><line x1="8" y1="17" x2="12" y2="17"/></svg>
+        </div>
+        <h3>מדינה נולדה</h3>
+        <p>הרצאה על הכרזת המדינה ב-כ"ט בנובמבר. מותאמת לילדי בית ספר — סיפור שמדבר בגובה העיניים.</p>
+        <span class="tag-small">זהות • תלמידי בתי ספר • הכרזת המדינה</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-content reveal">
+        <span class="label" style="font-size: 13px; font-weight: 700; letter-spacing: 0.25em; color: var(--wine); margin-bottom: 14px; display: inline-block;">קצת עליי</span>
+        <h2>אז מה כבר יש לספר?</h2>
+        <p>
+          <strong>ארץ ישראל היא מסדרון קסום, מלא בהפתעות</strong> — כולם עברו פה, כולם השאירו פה חותם, ולכולם יש סיפור.
+        </p>
+        <p>
+          במשך שנים אני מטייל בשבילי הארץ וסמטאותיה. החזון שלי הוא לספר לעם שלי על המקום המיוחד שבו אנו חיים.
+        </p>
+        <p>
+          הדגש שלי הוא על ה<strong>"לספר"</strong> — לא להלאות בעובדות משמימות, כרונולוגיה מתמשכת ופרטים טכניים אינסופיים. אלא <strong>לטייל את הסיפור.</strong>
+        </p>
+        <span class="signature">מירון שטטר, מורה דרך מוסמך</span>
+      </div>
+
+      <div class="about-image-wrap reveal" aria-label="תמונה של מירון שטטר"></div>
+    </div>
+
+    <div class="about-method reveal">
+      <div class="num">01</div>
+      <div>
+        <h3>שיטת הדרכה מיוחדת</h3>
+        <p>פיתחתי שיטת הדרכה ייחודית שיוצרת עניין בקרב המאזינים. אני מתמקד <strong style="color: var(--gold);">בהקניית תובנות</strong> ולא בהעברת ידע סתמית — כך חוויית ההרצאה נשארת גם לאחר שהיא הסתיימה.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="section testimonials" id="testimonials">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>מה מספרים עליי?</h2>
+      <p>מאזינים ומטיילים שהצטרפו אליי לסיפור.</p>
+    </div>
+
+    <div class="testimonial-grid">
+
+      <div class="testimonial reveal">
+        <p>לטייל סיפורים עם מירון זו חוויה אחרת: כמו לקרוא סיפור. כל אירוע שזור בקודמו ומתחבר לבא אחריו, כל הסבר משאיר אותך סקרן לשמוע מה קרה בהמשך. בסוף — הכל מתחבר לסיפור אחד משמעותי. חוויה לכל אחד!</p>
+        <span class="author">מיכל</span>
+      </div>
+
+      <div class="testimonial reveal">
+        <p>מירון הוא מדריך נהדר, עם ידע מעמיק. הוא הצליח להתחבר לאופי הצוות, ולהתאים את הלו"ז והתכנים לצרכים שלנו.</p>
+        <span class="author">ניר</span>
+      </div>
+
+      <div class="testimonial reveal">
+        <p>ההדרכה היתה ברמה גבוהה. בקיאות נהדרת בחומר ושפה יפה. התרשמנו מהמתודיקה ומבניית העלילה לאורך הטיול. מאוד נהנינו והשכלנו.</p>
+        <span class="author">כנרת</span>
+      </div>
+
+      <div class="testimonial reveal">
+        <p>היה כיף, מגבש ומהנה — בניצוח מושלם שלך.</p>
+        <span class="author">מאשה</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section contact" id="contact">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="label">לתאם הרצאה</span>
+      <h2>בואו נדבר</h2>
+      <p>מעוניינים בהרצאה לחברה, לבית ספר, למועדון או לשבט? השאירו פרטים או דברו איתי ישירות.</p>
+    </div>
+
+    <div class="contact-grid reveal">
+      <div class="contact-info">
+        <h2>זמין עבורכם</h2>
+        <p>הדרך הכי מהירה היא וואטסאפ. אבל גם טלפון ומייל עובדים מצוין.</p>
+
+        <a href="https://wa.me/972546488789" target="_blank" rel="noopener" class="contact-item">
+          <div class="ci-icon"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></div>
+          <div>
+            <div class="ci-label">וואטסאפ</div>
+            <span>054-648-8789</span>
+          </div>
+        </a>
+
+        <a href="tel:+972546488789" class="contact-item">
+          <div class="ci-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <div>
+            <div class="ci-label">טלפון</div>
+            <span>054-648-8789</span>
+          </div>
+        </a>
+
+        <a href="mailto:info@meron.tours" class="contact-item">
+          <div class="ci-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></div>
+          <div>
+            <div class="ci-label">אימייל</div>
+            <span>info@meron.tours</span>
+          </div>
+        </a>
+
+        <div class="contact-item" style="border-top: 1px solid rgba(201, 164, 92, 0.25); padding-top: 22px; margin-top: 6px;">
+          <div class="ci-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div>
+            <div class="ci-label">היכן</div>
+            <span style="font-size: 16px;">מרצה בכל הארץ • הרצאות פרונטליות וזום</span>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form" id="leadForm" onsubmit="return sendToWhatsApp(event)">
+        <h3>טופס יצירת קשר</h3>
+        <p class="form-sub">מלאו פרטים — וההודעה תועבר אליי בוואטסאפ.</p>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">שם מלא *</label>
+            <input id="name" name="name" type="text" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">טלפון *</label>
+            <input id="phone" name="phone" type="tel" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="org">ארגון / גוף</label>
+          <input id="org" name="org" type="text" placeholder="חברה, בית ספר, מועדון גמלאים, שבט צופים…">
+        </div>
+
+        <div class="form-group">
+          <label for="lecture">הרצאה שמעניינת אתכם</label>
+          <select id="lecture" name="lecture">
+            <option>הסיפור המטורף של מגילות מדבר יהודה</option>
+            <option>היום הזה נהיינו עם — ראשית ישראל</option>
+            <option>חנוכה — זיכרון הממלכה הנעלמה</option>
+            <option>היום שבו רעדה האדמה — יום כיפור ברמת הגולן</option>
+            <option>מדינה נולדה — לתלמידי בתי ספר</option>
+            <option>עוד לא יודע/ת — אשמח להתייעץ</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="msg">הערות (תאריך מבוקש, גודל קהל, מקום)</label>
+          <textarea id="msg" name="msg" rows="3"></textarea>
+        </div>
+
+        <button class="form-submit" type="submit">
+          שלח/י בוואטסאפ
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4z"/></svg>
+        </button>
+
+        <p class="form-note">לחיצה על "שלח" תפתח את וואטסאפ עם ההודעה מוכנה</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-brand">מירון שטטר</div>
+    <div class="footer-tagline">לטייל את הסיפור</div>
+    <div class="footer-contact-row">
+      <a href="tel:+972546488789">054-648-8789</a>
+      <a href="mailto:info@meron.tours">info@meron.tours</a>
+      <a href="https://wa.me/972546488789" target="_blank" rel="noopener">וואטסאפ</a>
+    </div>
+    <div class="footer-copy">
+      © מירון שטטר • מורה דרך ומרצה • meron.tours
+    </div>
+  </div>
+</footer>
+
+<!-- Sticky WhatsApp -->
+<a href="https://wa.me/972546488789?text=%D7%94%D7%99%D7%99%20%D7%9E%D7%99%D7%A8%D7%95%D7%9F%2C%20%D7%9E%D7%A2%D7%95%D7%A0%D7%99%D7%99%D7%A0%2F%D7%AA%20%D7%91%D7%94%D7%A8%D7%A6%D7%90%D7%94" class="whatsapp-float" target="_blank" rel="noopener" aria-label="פתח וואטסאפ">
+  <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+</a>
+
+<script>
+// Reveal on scroll
+(function() {
+  const els = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window)) {
+    els.forEach(el => el.classList.add('in'));
+    return;
+  }
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  els.forEach(el => io.observe(el));
+})();
+
+// Form -> WhatsApp
+function sendToWhatsApp(e) {
+  e.preventDefault();
+  const f = e.target;
+  const name = f.name.value.trim();
+  const phone = f.phone.value.trim();
+  const org = f.org.value.trim();
+  const lecture = f.lecture.value;
+  const msg = f.msg.value.trim();
+
+  let text = `היי מירון,\n\nשמי ${name}`;
+  if (org) text += ` מ${org}`;
+  text += `.\n`;
+  text += `הטלפון שלי: ${phone}\n`;
+  text += `מעוניין/ת בהרצאה: ${lecture}\n`;
+  if (msg) text += `\nהערות: ${msg}\n`;
+  text += `\nאשמח לחזרה כדי לתאם.`;
+
+  const url = `https://wa.me/972546488789?text=${encodeURIComponent(text)}`;
+  window.open(url, '_blank');
+  return false;
+}
+</script>
+
+</body>
+</html>
