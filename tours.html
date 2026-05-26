@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="טיולים מודרכים בכל הארץ עם מורה דרך מוסמך — לחברות וארגונים, אירועים משפחתיים, גמלאים, תנועות נוער. כל טיול נבנה סביב סיפור.">
+<meta name="theme-color" content="#8B2D1F">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<title>טיולים | מירון שטטר — לטייל את הסיפור</title>
+
+<meta property="og:title" content="טיולים | מירון שטטר — לטייל את הסיפור">
+<meta property="og:description" content="טיולים מודרכים בכל הארץ. חברות וארגונים, אירועים משפחתיים, גמלאים, תנועות נוער.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://meron.tours/tours.html">
+<meta property="og:image" content="https://meron.tours/images/hero-stage.jpg">
+<meta property="og:locale" content="he_IL">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&family=Frank+Ruhl+Libre:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="/index.html" class="brand">
+      מירון שטטר
+      <small>לטייל את הסיפור</small>
+    </a>
+    <nav class="main-nav" aria-label="ראשי">
+      <ul>
+        <li><a href="/index.html">בית</a></li>
+        <li><a href="/lectures.html">הרצאות</a></li>
+        <li><a href="/tours.html" class="active">טיולים</a></li>
+        <li><a href="/about.html">אודות</a></li>
+        <li><a href="#contact" class="nav-cta">צור קשר</a></li>
+      </ul>
+    </nav>
+    <button class="mobile-toggle" aria-label="תפריט" onclick="openMobileNav()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobileNav">
+  <button class="close-x" aria-label="סגור" onclick="closeMobileNav()">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <a href="/index.html" onclick="closeMobileNav()">בית</a>
+  <a href="/lectures.html" onclick="closeMobileNav()">הרצאות</a>
+  <a href="/tours.html" class="active" onclick="closeMobileNav()">טיולים</a>
+  <a href="/about.html" onclick="closeMobileNav()">אודות</a>
+  <a href="#contact" onclick="closeMobileNav()">צור קשר</a>
+</div>
+
+<!-- HERO -->
+<section class="hero hero-short" style="background: linear-gradient(135deg, rgba(44, 24, 16, 0.85) 0%, rgba(139, 45, 31, 0.65) 100%), url('/images/tours/hero-tours.jpg') center/cover no-repeat;">
+  <div class="container">
+    <span class="eyebrow">מורה דרך מוסמך • בכל הארץ</span>
+    <h1>
+      לטייל את הסיפור
+      <span class="accent">עם מירון שטטר</span>
+    </h1>
+    <p class="lead">
+      שואלים אותי: "איפה אתה מדריך?" – אני עונה: "בכל מקום שיש סיפור טוב".<br>
+      אטרקציה, רוגע, גיבוש, חוויה, אירוע, חגיגה.<br>
+      בואו נדבר. נתאים את הטיול לקבוצה ולתקציב.
+    </p>
+  </div>
+</section>
+
+<!-- ============ MOTTO ============ -->
+<section class="motto">
+  <div class="container">
+    <div class="motto-quote">
+      <p>כשיוצאים מגיעים <strong>למקומות נפלאים</strong></p>
+      <span style="display:block; margin-top:18px; font-family:'Assistant',sans-serif; font-size:16px; letter-spacing:0.08em; color:var(--gold); opacity:0.85;">— ד״ר סוס</span>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="section other-lectures">
+  <div class="container">
+    <div class="category-grid">
+
+      <a href="/tours/featured.html" class="category-card is-featured reveal">
+        <div class="icon-circle">
+          <svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8 5.8 21.3l2.4-7.4L2 9.4h7.6z"/></svg>
+        </div>
+        <h3>מיוחדים</h3>
+        <p>המיוחדים שלי זה אני. הסיפור, המסר, החוויה.</p>
+        <span class="card-link">לפרטים</span>
+      </a>
+
+      <a href="/tours/companies.html" class="category-card reveal">
+        <div class="icon-circle">
+          <svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/><line x1="9" y1="9" x2="9" y2="9"/><line x1="9" y1="12" x2="9" y2="12"/><line x1="9" y1="15" x2="9" y2="15"/></svg>
+        </div>
+        <h3>חברות וארגונים</h3>
+        <p>ימי גיבוש, ימי כיף, יום מחלקתי או טיול חברה.</p>
+        <span class="card-link">לפרטים</span>
+      </a>
+
+      <a href="/tours/events.html" class="category-card reveal">
+        <div class="icon-circle">
+          <svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        </div>
+        <h3>אירועים</h3>
+        <p>חגיגות משפחתיות, בת/בר מצווה, שמחות וחוויות של ביחד.</p>
+        <span class="card-link">לפרטים</span>
+      </a>
+
+      <a href="/tours/seniors.html" class="category-card reveal">
+        <div class="icon-circle">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>גמלאים</h3>
+        <p>קבוצות גמלאים, מועדוני חברותא ובתי הגיל השלישי.</p>
+        <span class="card-link">לפרטים</span>
+      </a>
+
+      <a href="/tours/youth.html" class="category-card reveal">
+        <div class="icon-circle">
+          <svg viewBox="0 0 24 24"><path d="M12 2L4 6v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V6l-8-4z"/></svg>
+        </div>
+        <h3>תנועות נוער</h3>
+        <p>מדריך תו תקן בכל הארץ. הדרכת מדריכים וטיולי הכנה.</p>
+        <span class="card-link">לפרטים</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section testimonials" id="testimonials">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>מה מספרים עליי?</h2>
+      <p>מטיילים שהצטרפו אליי לסיפור.</p>
+    </div>
+
+    <div class="testimonial-grid">
+
+      <div class="testimonial reveal">
+        <p>לטייל סיפורים עם מירון זו חוויה אחרת: כמו לקרוא סיפור. כל אירוע שזור בקודמו ומתחבר לבא אחריו, כל הסבר משאיר אותך סקרן לשמוע מה קרה בהמשך. בסוף — הכל מתחבר לסיפור אחד משמעותי. חוויה לכל אחד!</p>
+        <span class="author">מיכל</span>
+      </div>
+
+      <div class="testimonial reveal">
+        <p>מירון הוא מדריך נהדר, עם ידע מעמיק. הוא הצליח להתחבר לאופי הצוות, ולהתאים את הלו"ז והתכנים לצרכים שלנו.</p>
+        <span class="author">ניר</span>
+      </div>
+
+      <div class="testimonial reveal">
+        <p>ההדרכה היתה ברמה גבוהה. בקיאות נהדרת בחומר ושפה יפה. התרשמנו מהמתודיקה ומבניית העלילה לאורך הטיול. מאוד נהנינו והשכלנו.</p>
+        <span class="author">כנרת</span>
+      </div>
+
+      <div class="testimonial reveal">
+        <p>היה כיף, מגבש ומהנה — בניצוח מושלם שלך.</p>
+        <span class="author">מאשה</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cat-cta-band">
+  <div class="container">
+    <h2>לא יודעים איזו קטגוריה מתאימה?</h2>
+    <p>זה בסדר. שלחו פנייה — נחשוב יחד מה הכי נכון לקבוצה שלכם.</p>
+    <a href="#contact" class="btn btn-primary">בואו נדבר</a>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact" id="contact">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="label">בואו נתאם טיול</span>
+      <h2>בואו נדבר</h2>
+      <p>מעוניינים בטיול לחברה, לקבוצה, לאירוע משפחתי או לתנועת נוער? השאירו פרטים או דברו איתי ישירות.</p>
+    </div>
+
+    <div class="contact-grid reveal">
+      <div class="contact-info">
+        <h2>זמין עבורכם</h2>
+        <p>הדרך הכי מהירה היא וואטסאפ. אבל גם טלפון ומייל עובדים מצוין.</p>
+
+        <a href="https://wa.me/972546488789" target="_blank" rel="noopener" class="contact-item">
+          <div class="ci-icon"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></div>
+          <div>
+            <div class="ci-label">וואטסאפ</div>
+            <span>054-648-8789</span>
+          </div>
+        </a>
+
+        <a href="tel:+972546488789" class="contact-item">
+          <div class="ci-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <div>
+            <div class="ci-label">טלפון</div>
+            <span>054-648-8789</span>
+          </div>
+        </a>
+
+        <a href="mailto:info@meron.tours" class="contact-item">
+          <div class="ci-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></div>
+          <div>
+            <div class="ci-label">אימייל</div>
+            <span>info@meron.tours</span>
+          </div>
+        </a>
+
+        <div class="contact-item" style="border-top: 1px solid rgba(201, 164, 92, 0.25); padding-top: 22px; margin-top: 6px;">
+          <div class="ci-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div>
+            <div class="ci-label">היכן</div>
+            <span style="font-size: 16px;">מדריך טיולים בכל הארץ</span>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form" id="leadForm" onsubmit="return sendToWhatsApp(event)">
+        <h3>טופס יצירת קשר</h3>
+        <p class="form-sub">מלאו פרטים — וההודעה תועבר אליי בוואטסאפ.</p>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">שם מלא *</label>
+            <input id="name" name="name" type="text" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">טלפון *</label>
+            <input id="phone" name="phone" type="tel" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="org">ארגון / גוף</label>
+          <input id="org" name="org" type="text" placeholder="חברה, קבוצה, מועדון גמלאים, שבט צופים…">
+        </div>
+
+        <div class="form-group">
+          <label for="topic">איזה טיול מעניין אתכם?</label>
+          <select id="topic" name="topic">
+            <option>מיוחדים — סיור עם סיפור</option>
+            <option>אירוע / שמחה משפחתית</option>
+            <option>חברה / ארגון</option>
+            <option>גמלאים</option>
+            <option>תנועת נוער</option>
+            <option>עוד לא יודע/ת — אשמח להתייעץ</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="msg">הערות (תאריך מבוקש, גודל קבוצה, אזור)</label>
+          <textarea id="msg" name="msg" rows="3"></textarea>
+        </div>
+
+        <button class="form-submit" type="submit">
+          שלח/י בוואטסאפ
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4z"/></svg>
+        </button>
+
+        <p class="form-note">לחיצה על "שלח" תפתח את וואטסאפ עם ההודעה מוכנה</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-brand">מירון שטטר</div>
+    <div class="footer-tagline">לטייל את הסיפור</div>
+    <div class="footer-contact-row">
+      <a href="tel:+972546488789"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>054-648-8789</a>
+      <a href="mailto:info@meron.tours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>info@meron.tours</a>
+      <a href="https://wa.me/972546488789" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>וואטסאפ</a>
+      <a href="https://chat.whatsapp.com/Le1DZuD92veIudZApJD2sp" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>קבוצת הווטסאפ</a>
+    </div>
+    <div class="footer-copy">
+      © מירון שטטר • מורה דרך ומרצה • meron.tours
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/972546488789?text=%D7%94%D7%99%D7%99%20%D7%9E%D7%99%D7%A8%D7%95%D7%9F" class="whatsapp-float" target="_blank" rel="noopener" aria-label="פתח וואטסאפ">
+  <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+</a>
+
+<script src="/assets/site.js"></script>
+</body>
+</html>
