@@ -127,6 +127,37 @@ nav.main-nav a.active::after {
 .nav-cta::after { display: none !important; }
 .mobile-toggle { display: none; }
 
+/* ---------- Mobile Nav (off-canvas panel) ---------- */
+.mobile-nav {
+  position: fixed; inset: 0; z-index: 200;
+  background: var(--ink);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 30px;
+  transform: translateX(100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.35s ease, opacity 0.35s ease, visibility 0s linear 0.35s;
+}
+.mobile-nav.open {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+  transition: transform 0.35s ease, opacity 0.35s ease, visibility 0s;
+}
+.mobile-nav a {
+  font-family: 'Gveret Levin AlefAlefAlef', 'Frank Ruhl Libre', serif;
+  font-size: 28px;
+  color: var(--cream);
+}
+.mobile-nav a.active { color: var(--gold); }
+.mobile-nav .close-x {
+  position: absolute; top: 22px; left: 22px;
+  width: 42px; height: 42px;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--cream);
+}
+.mobile-nav .close-x svg { width: 24px; height: 24px; }
+
 /* ---------- Hero ---------- */
 .hero {
   position: relative;
