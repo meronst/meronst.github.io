@@ -1,6 +1,6 @@
 # ADR 0002 — Tour page generator and deployment: Eleventy + GitHub Actions
 
-Status: draft, 27/11/2026
+Status: accepted, 27/11/2026
 
 This is also the project's stack decision. The TypeScript and Python app stacks in the dev-workflow conventions don't
 apply: v3.0 has no backend or database.

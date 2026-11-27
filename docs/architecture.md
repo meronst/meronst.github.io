@@ -1,6 +1,6 @@
 # meron.tours v3.0 — Architecture
 
-Status: draft, 27/11/2026
+Status: approved, 27/11/2026
 
 Implements [requirements.md](requirements.md). Decisions: [ADR 0001](decisions/0001-ticketing-provider.md) (Tickchak),
 [ADR 0002](decisions/0002-tour-page-generator.md) (Eleventy + GitHub Actions).
@@ -175,8 +175,8 @@ instant: it waits for the checks and the deploy.
 | Google Form | ₪0 |
 | Tickchak | 5% per ticket, paid by Meron |
 
-## 11. Open decisions for approval
-| # | Question | Proposal |
+## 11. Decisions made at approval (27/11/2026)
+| # | Question | Decision |
 |---|---|---|
-| 1 | `tours/featured.html` blocks copy, right-click and some keys, including print. Should generated pages do the same? | **No on tour pages:** buyers need to copy the meeting point and print, and blocking keys can hurt accessibility. Remove it from the featured page too. |
-| 2 | How are tour data changes published after v3.0? | Short `content/<slug>` branch with a PR straight into `main`, without a version branch, then sync into the open release branch. |
+| 1 | `tours/featured.html` blocks copy, right-click and some keys, including print. Do generated pages do the same? | **No.** Tour pages don't block them, and the generated featured page drops the blocking: buyers need to copy the meeting point and print, and blocking keys can hurt accessibility. |
+| 2 | How are tour data changes published after v3.0? | Short `content/<slug>` branch with a PR straight into `main`, without a version branch, then sync into any open release branch. |
