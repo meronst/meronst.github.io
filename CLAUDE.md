@@ -5,8 +5,8 @@
 - Users: individuals booking public tours; organizations (welfare managers, schools, senior clubs, Scouts) requesting lectures/tours.
 - Jira: TBD (site/key to be provided)
 - Current version: v3.0 — dedicated tour pages + Tickchak booking (payment, max tickets, sold out, waiting list). Branch: release/v3.0.
-- Stack: static HTML/CSS + GitHub Pages; generator choice for tour pages decided in Phase 2 (docs/decisions/0002-*.md)
-- Current phase: 1 Requirements — docs/requirements.md (approved 27/11/2026); Phase 2 not started, awaiting Meron's go-ahead
+- Stack: static HTML/CSS + GitHub Pages; v3.0 moves to Eleventy 3 + GitHub Actions deploy (docs/decisions/0002-tour-page-generator.md)
+- Current phase: 3 Task breakdown. Phases 1 and 2 approved 27/11/2026 (docs/requirements.md, docs/architecture.md).
 
 ## Conventions
 Follow the dev-workflow conventions: gated phases (wait for approval between phases); one Jira parent epic and one
@@ -18,4 +18,7 @@ properties; docs and ADRs updated in the same PR; secrets only in .env.
 ## Project-specific notes
 - Ticketing/payment provider: Tickchak (5%). Prices, ticket types and max tickets live only in Tickchak — never duplicate them in page data.
 - Online payment is for open public tours only; organizations get the quote/contact path.
+- After v3.0 is released, tour data changes go on a short `content/<slug>` branch with a PR straight into `main`, then are synced into any open release branch.
+- Until the release: a card added to `tours/featured.html` on `main` must also become a tour data file on the release branch.
+- No copy, right-click or keyboard blocking on tour pages or the generated featured page.
 - Line endings: `.gitattributes` forces LF (added on release/v3.0, 27/11/2026). It reaches main with the v3.0 release.
