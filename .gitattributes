@@ -1,0 +1,2 @@
+# Store and check out all text files with LF on every machine, whatever core.autocrlf says.
+* text=auto eol=lf
