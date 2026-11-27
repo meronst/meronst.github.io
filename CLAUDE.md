@@ -6,7 +6,7 @@
 - Jira: TBD (site/key to be provided)
 - Current version: v3.0 — dedicated tour pages + Tickchak booking (payment, max tickets, sold out, waiting list). Branch: release/v3.0.
 - Stack: static HTML/CSS + GitHub Pages; generator choice for tour pages decided in Phase 2 (docs/decisions/0002-*.md)
-- Current phase: 1 Requirements — docs/requirements.md (draft, awaiting Meron's approval)
+- Current phase: 1 Requirements — docs/requirements.md (approved 27/11/2026); Phase 2 not started, awaiting Meron's go-ahead
 
 ## Conventions
 Follow the dev-workflow conventions: gated phases (wait for approval between phases); one Jira parent epic and one

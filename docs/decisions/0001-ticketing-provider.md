@@ -27,4 +27,5 @@ a server and database.
 - Prices, ticket types and max tickets live only in Tickchak; page data must not duplicate them.
 - Revisit if public-tour revenue passes ~₪10,000/month (5% becomes material): switch the booking box to a cheaper
   payment page plus our own capacity logic (v4.0). Tour pages and data files stay the same.
-- Open: who pays the 5%, receipt issuing, native waiting list (see requirements §7).
+- Meron absorbs the 5% (decided 27/11/2026).
+- Open: receipt issuing and terminal, native waiting list, widget sold-out display (see requirements §8).
